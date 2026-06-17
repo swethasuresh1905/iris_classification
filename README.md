@@ -1,60 +1,131 @@
-🌸 Iris Flower Classification - Machine Learning & Streamlit Dashboard
-Overview
+# 🌸 Iris Flower Classification - Machine Learning & Streamlit Dashboard
 
-This project demonstrates machine learning classification on the classic Iris dataset, predicting the species of iris flowers based on their sepal and petal measurements. The project also includes an interactive Streamlit dashboard for live predictions and model performance visualization.
+## Overview
 
-##🚀 Features
+This project demonstrates machine learning classification using the classic Iris dataset. The model predicts iris flower species based on sepal and petal measurements and provides an interactive Streamlit dashboard for live predictions and model performance visualization.
 
-1.Live Prediction
-    Users can input sepal and petal measurements via sliders.
-    Instant prediction of iris species: Setosa, Versicolor, or Virginica.
+---
 
-2.Model Performance Dashboard
-    Accuracy Score: Displays the model’s overall prediction accuracy.
-    Confusion Matrix: Visualizes correct and incorrect classifications for each species.
-    Feature Importance (Permutation): Shows which features (sepal/petal length and width) most influence the model’s predictions.
+## Features
 
-3.Trained Model
-    The trained Random Forest model is saved as a .pkl file for fast loading.
-    Label encoding is also saved for consistent predictions.
+### Live Prediction
 
-##🛠️ Technologies & Libraries
+* Input sepal length, sepal width, petal length, and petal width using interactive sliders.
+* Instantly predict the iris species:
 
-Python 3.x
-Machine Learning: scikit-learn
-Data Handling: pandas, numpy
-Visualization: matplotlib, seaborn
-Web App: Streamlit
-Model Persistence: pickle
+  * Setosa
+  * Versicolor
+  * Virginica
 
-📁 Project Structure
+### Model Performance Dashboard
+
+* Accuracy Score visualization
+* Confusion Matrix for classification analysis
+* Feature Importance analysis using permutation importance
+
+### Trained Model
+
+* Random Forest Classifier trained on the Iris dataset
+* Model saved as a `.pkl` file for fast loading
+* Label Encoder saved for consistent predictions
+
+---
+
+## Technologies Used
+
+* Python 3.x
+* Scikit-learn
+* Pandas
+* NumPy
+* Matplotlib
+* Seaborn
+* Streamlit
+* Pickle
+
+---
+
+## Project Structure
+
+```text
 iris/
 │
-├── iris_app.py              # Streamlit dashboard for live prediction & model visualization
-├── iris_cleaned.csv         # Cleaned Iris dataset
-├── iris_model.pkl           # Trained Random Forest model
-├── label_encoder.pkl        # Saved LabelEncoder for species
-├── Iris_Classification.ipynb # Notebook for model training & evaluation
-├── requirements.txt         # Project dependencies
-└── README.md                # Project documentation
+├── iris_app.py
+├── iris_cleaned.csv
+├── iris_model.pkl
+├── label_encoder.pkl
+├── Iris_Classification.ipynb
+├── requirements.txt
+└── README.md
+```
 
+---
 
-##🧪 How It Works
-1.Data Preprocessing
-    Cleaned the dataset (iris_cleaned.csv), normalized column names.
-    Encoded the species labels into numeric form for training.
+## How It Works
 
-2.Model Training
-    Used Random Forest Classifier.
-    Evaluated accuracy and confusion matrix.
-    Saved trained model and label encoder using pickle.
+### Data Preprocessing
 
-3.Dashboard
-    Loads trained model and encoder.
-    Provides live predictions.
-    Displays performance metrics and feature importance interactively.
+* Cleaned and prepared the Iris dataset
+* Standardized column names
+* Encoded species labels for model training
 
-##📝 Author
-    Swetha Suresh
-    Email: swethasuresh1905@gmail.com
-    GitHub: https://github.com/swethasuresh1903
+### Model Training
+
+* Trained a Random Forest Classifier
+* Evaluated model accuracy
+* Generated confusion matrix
+* Saved model and encoder using Pickle
+
+### Dashboard
+
+* Loads trained model and label encoder
+* Accepts user input through sliders
+* Displays live predictions
+* Visualizes model performance metrics
+
+---
+
+## Results
+
+* Successfully classified Iris flower species using machine learning.
+* Achieved high prediction accuracy using Random Forest Classification.
+* Built an interactive Streamlit dashboard for real-time predictions.
+* Visualized model performance using confusion matrices and feature importance plots.
+
+---
+
+## Installation
+
+Clone the repository:
+
+```bash
+git clone https://github.com/swethasuresh1905/iris_classification.git
+```
+
+Install dependencies:
+
+```bash
+pip install -r requirements.txt
+```
+
+Run the Streamlit application:
+
+```bash
+streamlit run iris_app.py
+```
+
+---
+
+## Future Enhancements
+
+* Compare multiple classification algorithms
+* Deploy dashboard online
+* Add advanced visualizations
+* Enable batch predictions using CSV uploads
+
+---
+
+## Author
+
+**Swetha Suresh**
+
+B.Tech Artificial Intelligence & Data Science
